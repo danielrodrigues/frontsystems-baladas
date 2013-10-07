@@ -3,6 +3,7 @@ package com.frontsystems.baladas;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.widget.ListView;
 
 public class MainActivity extends Activity {
 
@@ -10,6 +11,19 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        CustomListViewBalada linhaCustom[] = new CustomListViewBalada[]{
+                new CustomListViewBalada(R.drawable.ic_launcher,"Nome Balada","Endereco / telefone"),
+                new CustomListViewBalada(R.drawable.ic_launcher,"Nome Balada","Endereco / telefone"),
+                new CustomListViewBalada(R.drawable.ic_launcher,"Nome Balada","Endereco / telefone"),
+                new CustomListViewBalada(R.drawable.ic_launcher,"Nome Balada","Endereco / telefone")
+        };
+
+        CustomListViewBaladaAdapter adapter = new CustomListViewBaladaAdapter(this,R.layout.listview_item_row,linhaCustom);
+
+        ListView list = (ListView) findViewById(R.id.listaBaladas);
+        list.setAdapter(adapter);
+
     }
 
 
