@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Baladas/Baladas.iml" filepath="$PROJECT_DIR$/Baladas/Baladas.iml" />
       <module fileurl="file://$PROJECT_DIR$/BaladasProject.iml" filepath="$PROJECT_DIR$/BaladasProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/frontsystems-baladas.iml" filepath="$PROJECT_DIR$/frontsystems-baladas.iml" />
     </modules>
   </component>
 </project>
